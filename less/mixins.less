@@ -1,1 +1,33 @@
 // Mixins Here
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexRow{
+    display: flex; 
+    justify-content: space-around;
+
+}
+
+.custom-btn(@bgcolor:@btn-bg-color, @width:120px, @btFont:@porcelain){
+    display: flex;
+    justify-content: center;
+    background-color: @bgcolor;
+    margin: 0 0px 20px;
+    cursor: pointer;
+    width: @width;
+    height: 40px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: @btFont;
+    padding: 3%;
+    
+    &:hover {
+      background-color:@porcelain;
+      color:@btn-bg-color;
+    }
+}
