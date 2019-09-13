@@ -85,9 +85,17 @@
       flex-direction: column-reverse;
       align-items: center;
       justify-content: space-evenly;
+      padding-top: 2%;
+      padding-right:0px;
+      padding-left:0px;
+      width: 100%
     }
 
     .walk-text {
+
+      @media @phone {
+        width: 100%;
+      }
       width: 50%;
 
       h3 {
@@ -106,6 +114,10 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+      }
       
       img {
         width: 100%;
